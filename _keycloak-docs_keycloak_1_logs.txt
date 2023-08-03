@@ -1,0 +1,29 @@
+Updating the configuration and installing your custom providers, if any. Please wait.
+2023-08-03 06:21:26,474 INFO  [io.quarkus.deployment.QuarkusAugmentor] (main) Quarkus augmentation completed in 4523ms
+2023-08-03 06:21:27,618 INFO  [org.keycloak.quarkus.runtime.hostname.DefaultHostnameProvider] (main) Hostname settings: Base URL: <unset>, Hostname: <request>, Strict HTTPS: false, Path: <request>, Strict BackChannel: false, Admin URL: <unset>, Admin: <request>, Port: -1, Proxied: false
+2023-08-03 06:21:28,593 WARN  [io.quarkus.agroal.runtime.DataSources] (main) Datasource <default> enables XA but transaction recovery is not enabled. Please enable transaction recovery by setting quarkus.transaction-manager.enable-recovery=true, otherwise data may be lost if the application is terminated abruptly
+2023-08-03 06:21:29,130 INFO  [org.infinispan.SERVER] (keycloak-cache-init) ISPN005054: Native IOUring transport not available, using NIO instead: io.netty.incubator.channel.uring.IOUring
+2023-08-03 06:21:29,224 WARN  [org.infinispan.CONFIG] (keycloak-cache-init) ISPN000569: Unable to persist Infinispan internal caches as no global state enabled
+2023-08-03 06:21:29,244 WARN  [org.infinispan.PERSISTENCE] (keycloak-cache-init) ISPN000554: jboss-marshalling is deprecated and planned for removal
+2023-08-03 06:21:29,263 INFO  [org.infinispan.CONTAINER] (keycloak-cache-init) ISPN000556: Starting user marshaller 'org.infinispan.jboss.marshalling.core.JBossUserMarshaller'
+2023-08-03 06:21:29,393 INFO  [org.keycloak.broker.provider.AbstractIdentityProviderMapper] (main) Registering class org.keycloak.broker.provider.mappersync.ConfigSyncEventListener
+2023-08-03 06:21:30,526 INFO  [org.keycloak.quarkus.runtime.storage.legacy.liquibase.QuarkusJpaUpdaterProvider] (main) Initializing database schema. Using changelog META-INF/jpa-changelog-master.xml
+2023-08-03 06:21:32,107 INFO  [org.keycloak.connections.infinispan.DefaultInfinispanConnectionProviderFactory] (main) Node name: node_793750, Site name: null
+2023-08-03 06:21:32,217 INFO  [org.keycloak.services] (main) KC-SERVICES0050: Initializing master realm
+2023-08-03 06:21:33,998 INFO  [io.quarkus] (main) Keycloak 21.0.1 on JVM (powered by Quarkus 2.13.7.Final) started in 7.394s. Listening on: http://0.0.0.0:8080
+2023-08-03 06:21:33,998 INFO  [io.quarkus] (main) Profile dev activated. 
+2023-08-03 06:21:33,998 INFO  [io.quarkus] (main) Installed features: [agroal, cdi, hibernate-orm, jdbc-h2, jdbc-mariadb, jdbc-mssql, jdbc-mysql, jdbc-oracle, jdbc-postgresql, keycloak, logging-gelf, micrometer, narayana-jta, reactive-routes, resteasy, resteasy-jackson, smallrye-context-propagation, smallrye-health, vertx]
+2023-08-03 06:21:34,131 INFO  [org.keycloak.services] (main) KC-SERVICES0009: Added user 'admin' to realm 'master'
+2023-08-03 06:21:34,134 WARN  [org.keycloak.quarkus.runtime.KeycloakMain] (main) Running the server in development mode. DO NOT use this configuration in production.
+
+
+==================================================================================================
+keycloak-db	running	
+keycloak-docs	postgres:latest	2023-08-03 08:12:27	172.24.0.2	-	administrators
+
+keycloak-docs_postgres_1	healthy	
+keycloak-docs	postgres:latest	2023-08-03 08:20:49	172.25.0.2	5432:5432	administrators
+
+keycloak-docs_keycloak_1	running	
+keycloak-docs	quay.io/keycloak/keycloak:21.0.1
+==================================================================================================
