@@ -21,4 +21,11 @@ COPY --from=builder /opt/keycloak/ /opt/keycloak/
 # ENV KC_DB_USERNAME=<DBUSERNAME>
 # ENV KC_DB_PASSWORD=<DBPASSWORD>
 # ENV KC_HOSTNAME=localhost
+
+# Copy the custom theme into the Keycloak container
+#COPY my_custom_theme/ /opt/jboss/keycloak/themes/my_custom_theme/
+
+# Set the custom theme as the default theme
+#RUN sed -i 's/keycloak/base my_custom_theme/' /opt/jboss/keycloak/standalone/configuration/standalone.xml
+
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]

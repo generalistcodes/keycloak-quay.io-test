@@ -41,6 +41,8 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+    volumes:
+    - ./my_custom_theme:/opt/jboss/keycloak/themes/my_custom_theme   # Mount the custom theme directory
     networks:
       - keycloak_demo
 
