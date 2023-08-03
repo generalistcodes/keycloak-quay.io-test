@@ -20,4 +20,5 @@ Updating the configuration and installing your custom providers, if any. Please 
 ==================================================================================================
 versions:	quay.io/keycloak/keycloak:21.0.1
 versions:   quay.io/keycloak/keycloak:22.0
+documentation: https://www.keycloak.org/docs/latest/server_development/index.html#_themes
 ==================================================================================================
