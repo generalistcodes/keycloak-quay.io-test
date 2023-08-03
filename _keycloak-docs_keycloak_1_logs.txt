@@ -18,12 +18,6 @@ Updating the configuration and installing your custom providers, if any. Please 
 
 
 ==================================================================================================
-keycloak-db	running	
-keycloak-docs	postgres:latest	2023-08-03 08:12:27	172.24.0.2	-	administrators
-
-keycloak-docs_postgres_1	healthy	
-keycloak-docs	postgres:latest	2023-08-03 08:20:49	172.25.0.2	5432:5432	administrators
-
-keycloak-docs_keycloak_1	running	
-keycloak-docs	quay.io/keycloak/keycloak:21.0.1
+versions:	quay.io/keycloak/keycloak:21.0.1
+versions:   quay.io/keycloak/keycloak:22.0
 ==================================================================================================
